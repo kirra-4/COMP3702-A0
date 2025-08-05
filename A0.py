@@ -61,16 +61,16 @@ def Q6(state1, state2):
     col = empty % 3
     new_row = new_empty // 3
     new_col = new_empty % 3
-    if (new_row == row) & (new_col < col):
+    if (new_row == row) and (new_col < col):
         print("L")
         return
-    elif (new_row == row) & (new_col > col):
+    elif (new_row == row) and (new_col > col):
         print('R')
         return
-    elif (new_col == col) & (new_row > row):
+    elif (new_col == col) and (new_row > row):
         print('D')
         return
-    elif (new_col == col) & (new_row < row):
+    elif (new_col == col) and (new_row < row):
         print('U')
         return
     else:
