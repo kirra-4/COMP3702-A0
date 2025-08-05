@@ -33,7 +33,6 @@ def Q4(E, n):
     for edge in E.values():
         if edge[0] == n:
             n_successors.add(edge[1])
-            n_successors.update(Q4(E, edge[1]))
     return n_successors
 
 
