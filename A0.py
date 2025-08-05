@@ -53,7 +53,7 @@ def Q6(state1, state2):
         return
     try:
         empty = state1.index('_')
-        new_empty = state2.indexOf('_')
+        new_empty = state2.index('_')
     except ValueError:
         print("IMPOSSIBLE")
         return
